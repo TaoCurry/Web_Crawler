@@ -51,7 +51,7 @@ type(soup.tag.string) <class 'bs4.element.Comment'>
 
  13.搜索文档树：两个方法搜索文档树 find()  &&  find_all()
   BeautifulSoup.find() --> 获取第一个满足条件的内容
-  BeautifulSoup.find_all(name, attrs, recursive, text,**kwargs) --> 列表(list)形式返回所有满足条件的对象，<class 'bs4.element.ResultSet'>，可以进行迭代  操作。如果传入列表参数,Beautiful Soup会将与列表中任一元素匹配的内容返回；如果传入True，可以匹配任何值。
+  BeautifulSoup.find_all(name, attrs, recursive, text,**kwargs) --> 列表(list)形式返回所有满足条件的对象，<class 'bs4.element.ResultSet'>  可以进行迭代操作。如果传入列表参数,Beautiful Soup会将与列表中任一元素匹配的内容返回；如果传入True，可以匹配任何值。
 
  14.CSS选择器  通过 BeautifulSoup.select() 实现 返回的是一个列表(list)
  筛选原则是:标签名(tag)不加任何修饰，类名(.class)前加点，id(#id)名前加 #
@@ -82,7 +82,7 @@ print(soup.prettify())    # 格式化输出，以文档树的形式
 print(soup.title)   # <title>The Dormouse's story</title>  tag title的所有内容
 print(soup.title.name)   # title
 print(soup.title.string)    # The Dormouse's story 网页真正展示的标题
-print(soup.a)   # 获取第一个a标签
+print(soup.a)    # 获取第一个a标签
 print(soup.find_all('a'))   # 找到所有a标签的内容，并将其以list形式返回,是一个可迭代对象Iterable.
 
 
