@@ -23,7 +23,7 @@ __author__ = "Curry"
 
 import requests
 
-
+r = requests.get('https://nba.hupu.com/')
 print(r.status_code)    # HTTP请求的返回状态，200表示连接成功，404表示连接失败
 print(r.text)
 r = requests.get('https://www.baidu.com/s', params={'f': 8, 'rsv_bp': 1, 'rsv_idx': 1, 'word': '新浪微博', 'tn': '96885894_hao_pg'})
