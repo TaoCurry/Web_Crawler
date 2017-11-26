@@ -23,7 +23,6 @@ __author__ = "Curry"
 
 import requests
 
-'''
 
 print(r.status_code)    # HTTP请求的返回状态，200表示连接成功，404表示连接失败
 print(r.text)
@@ -33,11 +32,8 @@ print(r.status_code)
 print(r.text)
 print(r.encoding)
 print(r.content)
+print(r.apparent_encoding)
 
-for key in r.headers:
-    print(key)
-    print(r.apparent_encoding)
-'''
 
 
 def getHTMLtext(url):   # 爬取网页的通用代码框架
