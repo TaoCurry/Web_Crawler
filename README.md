@@ -1,6 +1,8 @@
 # Web_Crawler
 网络爬虫学习
 
+HTTP基本原理：https://ask.hellobi.com/blog/cuiqingcai/9793
+
 网络爬虫步骤：
 第一步：使用BeautifulSoup解析网页 Soup = BeautifulSoup(html, 'lxml')
 第二步：描述爬取的东西在哪里 xx = Soup.select('???')
